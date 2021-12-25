@@ -1,0 +1,641 @@
+/* :root {
+    --amount-of-services: 2;
+    --amount-of-advantages: 8;
+} */
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Medium"), local("Muller-Medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Light"), local("Muller-Light"),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Bold"), local("Muller-Bold"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Regular"), local("Muller-Regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1170px;
+  font-family: "Muller", sans-serif;
+}
+
+.set-padding-0 {
+  padding: 0;
+}
+
+.set-margin-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.body {
+  padding-top: 30px;
+  background: #e5e5e5;
+}
+
+.section__margin {
+  margin: 0 0 70px 0;
+}
+
+.header {
+  margin-bottom: 70px;
+}
+
+.link-logo {
+  margin-right: 40px;
+}
+
+.tel {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #666666;
+  margin-right: auto;
+}
+
+.log-in {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #cc9933;
+}
+
+.valign__center {
+  align-items: center;
+}
+
+.top__header {
+  margin: 0 0 30px 0;
+}
+
+.menu-list-item {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #666666;
+}
+
+.menu-list-item-margin:not(:last-child) {
+  margin-right: 45px;
+}
+
+.menu-list-item-margin:last-child {
+  margin-right: 56px;
+}
+
+.main-menu {
+  display: inline-block;
+}
+
+.menu-list-justify {
+}
+
+.vertical__line {
+  border-right: 1px solid #e1e1e1;
+  height: 50px;
+  margin-right: 57px;
+}
+
+.btn {
+  border: 1px solid #cc9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #cc9933;
+}
+
+.want-tour-btn {
+  height: 42px;
+  width: 107px;
+  margin-right: 40px;
+}
+
+.call-back-btn {
+  height: 42px;
+  width: 177px;
+}
+
+.btn-container-main-menu {
+}
+
+.main-menu__container {
+  background: #ffffff;
+  border-radius: 15px;
+  height: 70px;
+  padding-left: 45px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.special__content {
+  min-height: 540px;
+}
+
+.special__block {
+  flex-direction: column;
+  width: calc((100% - 30px) / 2);
+}
+
+.special__block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.special__item {
+  flex: 1;
+  /* outline: 1px solid red; */
+  border-radius: 15px;
+  margin-bottom: 30px;
+  /* background-color: grey; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.item-right {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+  padding-top: 211px;
+}
+
+.special__item:last-child {
+  margin-bottom: 0;
+}
+
+.h2 {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height */
+  color: #333333;
+  margin: 0 0 20px 0;
+  text-indent: 40px;
+}
+
+.maldives {
+  background-image: url("../img/maldives.jpg");
+}
+
+.lux {
+  background-image: url("../img/lux.jpg");
+}
+
+.krit {
+  background-image: url("../img/krit.jpg");
+}
+
+.span__spec-details {
+  margin-right: 5px;
+}
+
+.proposition {
+  padding: 0;
+  margin: 0;
+}
+
+.h3__proposition {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  max-width: 299px;
+  max-height: 80px;
+  margin: 0 0 15px 0;
+}
+
+.h3__lux {
+  font-size: 60px;
+  line-height: 60px;
+  max-width: 299px;
+  max-height: 180px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.price {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #ffffff;
+  margin: 0 0 47px 0;
+  opacity: 0.8;
+}
+
+.price_lux {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 47px;
+}
+
+.details {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #ffcc66;
+}
+
+.paragraph-about {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+  color: #000000;
+  width: 888px;
+}
+
+.services-item {
+  width: 573px;
+  min-height: 330px;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: calc(26px + 165px) 45px 50px 45px;
+}
+
+.services-item:not(:nth-child(2n)) {
+  margin-right: 23px;
+}
+
+.services-item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 23px;
+}
+
+/* .services-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.services-item:nth-child(1),
+.services-item:nth-child(1) {
+  margin-bottom: 30px;
+} */
+
+.exclusive-serving {
+  background-image: url("../img/exclusive-serv.jpg");
+}
+
+.rent-banquaette-halls {
+  background-image: url("../img/rent-banqauette-hall.jpg");
+}
+
+.saunas-pools-fitness {
+  background-image: url("../img/pools.jpg");
+}
+
+.watched-parking {
+  background-image: url("../img/guarded-parking.jpg");
+}
+
+.services-list {
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: space-between;
+    align-content: space-between; */
+  min-height: 683px;
+}
+
+.service-title {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  /* identical to box height, or 40px */
+  color: #cc9933;
+  margin-right: 5px;
+}
+
+.service-brief-descr {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+  color: #000000;
+  margin: 0;
+  width: 402px;
+}
+
+.advantage-item {
+  background: #ffffff;
+  border-radius: 15px;
+  width: 275px;
+  min-height: 275px;
+  padding: 40px 45px;
+}
+
+.advantages-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between;
+    align-content: space-between; */
+  min-height: 580px;
+}
+
+.advantage-item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+.advantage-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 23px;
+}
+
+.adv-container {
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: left top;
+  padding-top: 60px;
+}
+
+.advantage1 {
+  background-image: url("../img/bathtubadv-1.svg");
+}
+
+.advantage2 {
+  background-image: url("../img/hangeradv-2.svg");
+}
+
+.advantage3 {
+  background-image: url("../img/heatingadv-3.svg");
+}
+
+.advantage4 {
+  background-image: url("../img/hotel-keyadv-4.svg");
+}
+
+.advantage5 {
+  background-image: url("../img/parkingadv-5.svg");
+}
+
+.advantage6 {
+  background-image: url("../img/receptionadv-6.svg");
+}
+
+.advantage7 {
+  background-image: url("../img/security-boxadv-7.svg");
+}
+
+.advantage8 {
+  background-image: url("../img/swimming-pooladv-8.svg");
+}
+
+.adv-descr {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+  color: #000000;
+}
+
+.accommodations-list {
+  flex-wrap: wrap;
+  /*     justify-content: space-between;
+    align-content: space-between; */
+  min-height: calc(440px * 3 + 23px * 2);
+}
+
+.all-accommodations {
+  background-image: url("../img/acc-all.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 440px;
+  width: 374px;
+  border-radius: 15px;
+}
+
+.accommodation-item {
+  min-height: 440px;
+  width: 374px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.accommodation-item:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.accommodation-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 23px;
+}
+
+.img-acc {
+  border-radius: 15px;
+}
+
+.acc-descr-div {
+  padding: 45px;
+}
+
+.accommodation-price {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #999999;
+  height: 20px;
+  width: 160px;
+}
+
+.acc-price-span {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #000000;
+  margin: 0px 4px;
+}
+
+.flex-acc__justify {
+  justify-content: space-between;
+}
+
+.accommodation-name {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.accommodation-location {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #999999;
+  margin: 0 0 16px 0;
+}
+
+.flex-acc__margin {
+  margin: 0 0 16px 0;
+}
+
+.accommodation-rooms-btn {
+  border: 1px solid #cc9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #cc9933;
+  padding: 13px 20px;
+}
+
+.show-all-acc-span {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  /* identical to box height, or 40px */
+  color: #ffffff;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 5px;
+  max-width: 250px;
+}
+
+.show-all-accommodations {
+  padding: 373px 0 0 54px;
+}
+
+.acc__night {
+  color: #000000;
+}
