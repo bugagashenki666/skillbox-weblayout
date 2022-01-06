@@ -1,0 +1,597 @@
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Medium'), local('Muller-Medium'),
+      url('../fonts/MullerMedium.woff2') format('woff2'),
+      url('../fonts/MullerMedium.woff') format('woff'),
+      url('../fonts/MullerMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.body {
+    background-color: #E5E5E5;
+    padding: 30px 0 0 0;
+}
+.header {
+  height: 54px;
+
+}
+.header-margin {
+  margin: 0 0 30px 0;
+}
+.main {
+}
+.footer {
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.spec-proposition {
+}
+.about {
+}
+.services {
+}
+.advantages {
+}
+.accommodations {
+}
+.want-tour {
+}
+.contacts {
+}
+.link-logo {
+  margin: 0 40px 0 0;
+  width: 261px;
+  height: 54px;
+  font-size: 0;
+}
+.tel {
+  text-decoration:  none;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  display: inline-block;
+  color: #666666;
+
+  height: 54px;
+  vertical-align: middle;
+  margin: 0 545px 0 0;
+
+}
+.log-in {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #CC9933;
+
+}
+.main-menu {
+  display: inline-block;
+  padding-left: 45px;
+}
+.main-menu-container {
+  background: #FFFFFF;
+  border-radius: 15px;
+  height: 56px;
+  margin-bottom: 70px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 50px;
+  display: inline-block;
+  font-size: 0;
+  background: #E1E1E1;
+  vertical-align: middle;
+}
+.btn-container-main-menu {
+  padding-left: 57px;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #CC9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #CC9933;
+}
+.want-tour-btn {
+  height: 42px;
+  width: 107px;
+  margin-right: 40px;
+}
+.call-back-btn {
+  height: 42px;
+  width: 177px;
+}
+.h2 {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height */
+
+
+  color: #333333;
+  margin: 0 0 20px 40px;
+
+}
+
+.section {
+  margin: 0 0 70px 0;
+}
+.paragraph-about {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+
+
+  color: #000000;
+
+}
+
+.list {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list {
+
+}
+.spec-props-list {
+}
+.services-list {
+}
+.advantages-list {
+}
+.accommodations-list {
+}
+.menu-list-item {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #666666;
+  margin: 0 45px 0 0;
+}
+
+.menu-list-item:last-child
+{
+  margin: 0 56px 0 0;
+}
+
+.spec-props-item {
+}
+
+.lux {
+}
+
+.services-item {
+  width: 573px;
+  height: 330px;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+.services-item:nth-child(2n+1) {
+  margin-right: 23px;
+}
+
+.services-item:nth-child(1), .services-item:nth-child(1) {
+  margin-bottom: 23px;
+}
+
+.exclusive-serving {
+  background-image: url("../img/exclusive-serv.jpg");
+
+}
+
+.rent-banquaette-halls {
+  background-image: url("../img/rent-banqauette-hall.jpg");
+
+}
+
+.saunas-pools-fitness {
+  background-image: url("../img/pools.jpg");
+
+}
+
+.watched-parking {
+  background-image: url("../img/guarded-parking.jpg");
+
+}
+
+.services-svg {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.service-title {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.service-item-descr-div {
+  padding: 191px 0 0 45px;
+}
+
+.advantage-item {
+  height: 275px;
+  width: 275px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: block;
+  float: left;
+}
+
+.adv-container {
+  padding: 40px 0 0 45px;
+}
+
+.advantage-item {
+  margin-right: 23px;
+}
+
+.advantage-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantage-item:nth-child(1),
+.advantage-item:nth-child(2),
+.advantage-item:nth-child(3),
+.advantage-item:nth-child(4)  {
+  margin-bottom: 23px;
+}
+
+.accommodation-item {
+  width: 374px;
+  height: 440px;
+  float: left;
+  display: block;
+  margin-right: 24px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+
+.acc-descr-div {
+  margin:  36px 0 0 45px;
+}
+
+.img-acc {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.accommodation-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.accommodation-item:nth-child(7),
+.accommodation-item:nth-child(8),
+.accommodation-item:nth-child(9) {
+  margin-bottom: 0px;
+}
+.accommodation-price {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 16px;
+  color: #999999;
+  display: inline-block;
+  margin-right: 44px;
+}
+.acc-price-span {
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.accommodation-mark {
+  display: inline-block;
+}
+
+.accommodation-name {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  margin: 0 0 16px 0;
+  color: #000000;
+}
+
+.accommodation-location {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  margin: 0 0 36px 0;
+  
+  color: #999999;
+  
+}
+
+.accommodation-rooms-btn {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100px;
+  height: 42px;
+}
+
+.all-accommodations {
+  background-image: url(../img/acc-all.jpg);
+}
+
+.text-block-proposition-item {
+  padding: 40px 0 0 40px;
+}
+
+.text-block-proposition-item-lux {
+  padding: 211px 0 0 40px;
+}
+
+.menu-list-item-link {
+  text-decoration: none;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #666666;
+
+}
+.spec-props-item {
+  display: inline-block;
+  border-radius: 15px;
+}
+.spec-props-item-h3 {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+
+  color: #FFFFFF;
+  width: 299px;
+  height: 80px;
+  display: block;
+}
+
+.spec-props-item-h3-lux {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  width: 299px;
+  height: 180px;
+  color: #FFFFFF;
+}
+
+.spec-props-item-h3, .spec-props-item-h3-lux {
+  margin: 0 0 15px 0;
+}
+
+.price-lux {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+
+  opacity: 0.8;
+}
+
+.maldives
+{
+  background-image: url("../img/maldives.jpg");
+  height: 258px;
+  width: 573px;
+  background-size: contain;
+  margin: 0 0 23px 0;
+}
+.lux{
+  background-image: url("../img/lux.jpg");
+  height: 540px;
+  width: 573px;
+  background-size: contain;
+  float: right;
+}
+.krit {
+  background-image: url("../img/krit.jpg");
+  height: 258px;
+  width: 573px;
+  background-size: contain;
+}
+.price {
+  display: block;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+
+  opacity: 0.8;
+}
+
+.price, .price-lux
+{
+  margin: 0 0 47px 0;
+}
+
+.details {
+  text-decoration: none;
+  display: block;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #FFCC66;
+}
+
+.div-details {
+  padding: 0 0 0 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.services-item-descr {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  /* identical to box height, or 40px */
+
+
+  color: #CC9933;
+  margin: 0;
+}
+.service-brief-descr {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+
+
+  color: #000000;
+  width:  402px;
+  height: 51px;
+
+}
+.adv-descr {
+  width: 188px;
+  height: 118px;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+
+
+  color: #000000;
+
+}
+.accommodation-price {
+}
+.accommodation-mark {
+}
+.accomodation-name {
+}
+.accomodation-location {
+}
+.accommodation-rooms-btn {
+}
+.show-all-accommodations {
+  display: block;
+  padding: 373px 0 0 53px;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  /* identical to box height, or 40px */
+
+
+  color: #FFFFFF;
+}
+
+.show-all-div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.service-link {
+  text-decoration: none;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  /* identical to box height, or 40px */
+
+
+  color: #CC9933;
+
+}
+.accommodation-asterisks {
+}
+
+.acc-show-all-svg {
+  display: inline-block;
+  vertical-align: middle;
+}
