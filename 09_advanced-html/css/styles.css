@@ -924,6 +924,14 @@ body {
 
 .footer {
   margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.footer-sun {
+
 }
 
 .footer-container {
@@ -933,10 +941,12 @@ body {
   padding: 44px 51px 46px 52px;
   background-image: url(../img/footer-sun.svg);
   background-repeat: no-repeat;
-  background-size: 255px 255px;
-  background-position-x: 737px;
+  background-size: 255px 230px;
+  background-position-x: 754px;
   background-position-y: bottom;
 }
+
+
 
 .footer-contacts-link:nth-child(3) {
   margin-bottom: 15px;
