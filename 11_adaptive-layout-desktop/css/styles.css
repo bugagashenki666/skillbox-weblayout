@@ -5,6 +5,7 @@
   --orange-button-background-color: #ff9900;
   --main-text-color-on-dark-background: #ffffff;
   --main-grey-tone: #cacaca;
+  --amount-main-menu-items: 5;
 }
 
 html {
@@ -159,6 +160,10 @@ li {
   flex-grow: 1;
 }
 
+.header__list-item {
+  max-width: calc(100% / var(--amount-main-menu-items));
+}
+
 .header__link {
   font-family: var(--main-text-font);
   font-style: normal;
@@ -172,6 +177,7 @@ li {
   transition-property: border-bottom outline color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+  word-break: break-all;
 }
 
 .header__link:hover {
@@ -304,6 +310,10 @@ li {
 
 /* about*/
 
+.about {
+  padding-top: 9px;/*pixel perfect*/
+}
+
 .about__h2 {
   margin-bottom: 20px;
   text-indent: 3px; /*pixelPerfect*/
@@ -327,6 +337,7 @@ li {
   width: calc((100% - 32px) / 2);
   display: flex;
   align-items: flex-end;
+  padding-bottom: 2px;
 }
 
 .about__articles-right-block {
@@ -338,17 +349,21 @@ li {
 }
 
 .about__article-right {
-  height: calc((100% - 32px) / 2);
+  min-height: 295px/*calc((100% - 32px) / 2)*/;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 57px;
-  background-position-y: 66px;
-  background-size: 195px 160px;
-  padding: 65px 50px 65px 300px;
+  background-position-x: 58px;/*pixel perfect*/
+  background-position-y: 65px;/*pixel perfect*/
+  background-size: 193px 164px;/*pixel perfect*/
+  padding: 65px 50px 65px 300px;/*pixel perfect*/
   background-color: #FFFFFF;
   border: 1px solid var(--main-grey-tone);
   box-sizing: border-box;
+}
+
+.about__article-right:first-child {
+  margin-bottom: 32px;
 }
 
 .about__consulting {
@@ -362,6 +377,7 @@ li {
 .about__h3 {
   margin-bottom: 8px;
   max-width: 452px;
+  line-height: 28px;/*pixel perfect*/
 }
 
 .about__article-p {
@@ -398,6 +414,8 @@ li {
   font-size: 16px;
   line-height: 16px;
   transition: background-color .3s ease-in-out .2s, border .3s ease-in .2s, outline .3s ease-out .2s;
+  max-width: 30%;
+  word-break: break-all;
 }
 
 .about__button:hover {
@@ -443,6 +461,8 @@ li {
   font-size: 18px;
   line-height: 22px;
   color: var(--main-text-color);
+  max-width: 10%;
+  word-break: break-all;
 }
 
 .how__steps-item:not(:last-child) {
@@ -477,9 +497,39 @@ li {
 }
 
 .how__cards-item {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  min-height: 460px;
 }
+
+.how__cards-item:before {
+  content: "";
+  position: absolute;
+  width: 49%;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-size: cover;
+  background-position-x: -16px;/*pixel perfect*/
+  background-position-y: 11px;/*pixel perfect*/
+  background-repeat: no-repeat;
+}
+
+.how__card1:before {
+  background-image: url('../img/consulting.jpg');
+}
+
+.how__card2:before {
+  background-image: url('../img/estimate.jpg');
+}
+
+.how__card3:before {
+  background-image: url('../img/hire.jpg');
+}
+
+.how__card4:before {
+  background-image: url('../img/inspect.jpg');
+}
+
 
 .how__card-description {
   max-width: 758px;
@@ -508,6 +558,8 @@ li {
 .how__button-grey {
   font-size: 16px;
   line-height: 20px;
+  max-width: 40%;
+  word-break: break-all;
 }
 
 .how__button {
@@ -553,32 +605,6 @@ li {
   border: none;
 }
 
-.how__card-image {
-  background-position-x: 0px;
-  background-position-y: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 470px;
-  min-width: 870px;
-}
-
-.how__card1-image {
-  background-image: url('../img/consulting.jpg');
-}
-
-.how__card2-image {
-  background-image: url('../img/estimate.jpg');
-}
-
-.how__card3-image {
-  background-image: url('../img/hire.jpg');
-}
-
-.how__card4-image {
-  background-image: url('../img/inspect.jpg');
-}
-
-
 /*faq*/
 
 .faq {}
@@ -603,6 +629,11 @@ li {
   border-bottom: 1px solid var(--main-grey-tone);
   cursor: pointer;
   transition: border-color .3s ease-in-out;
+}
+
+.faq__h3 {
+  max-width: 80%;
+  word-break: break-all;
 }
 
 .faq__list-item:hover,
@@ -692,18 +723,24 @@ li {
   display: flex;
   flex-direction: column;
   margin-right: 0px;
+  max-width: calc(90vw / 3);
+  word-break: break-all;
 }
 
 .footer__column-center {
   min-height: 494px;
   min-width: 570px;
   margin-right: -115px;
+  max-width: calc(90vw / 3);
+  word-break: break-all;
 }
 
 .footer__column-right {
   padding-top: 87px;
   flex-basis: 363px;
   margin-right: -18px;
+  max-width: calc(90vw / 3);
+  word-break: break-all;
 }
 
 .footer__logo {
@@ -715,6 +752,10 @@ li {
   height: 72px;
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.footer__nav {
+  
 }
 
 .footer__menu {
